@@ -39,24 +39,30 @@ export default function Main() {
         <div className="App">
             <div className='main-section'>
                 <div className='aligment'>
-                    <Header title={'TODO LIST'}/>
+                    {/* Header Component */}
+                    <Header title={'TODO LIST'} />
+
+                    {/* Add Form Component */}
                     <AddForm
                         onChange={onChangeInput}
                         addItem={addItem}
                         inputValue={inputValue}
                     />
 
+                    {/* TODO List Tile Component */}
                     <div className='main-list-wrap'>
                         {
-                            todoListArray && todoListArray.length > 0 ? todoListArray.map((item, index) => { return <TodoList data={item} index={index} removeFromArray={removeFromArray} key={index} /> })
+                            todoListArray && todoListArray.length > 0 ?
+                                todoListArray.map((item, index) => { return <TodoList data={item} index={index} removeFromArray={removeFromArray} key={index} /> })
                                 :
                                 <p className='text-center'>No Item Found!!</p>
                         }
                     </div>
+
+                    {/*Footer Component */}
                     <Footer totalCount={todoListArray.length} />
                 </div>
             </div>
         </div>
     );
 }
-
