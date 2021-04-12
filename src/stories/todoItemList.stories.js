@@ -13,6 +13,12 @@ const removeFromArray = (id) => {
 }
 
 const Template = () => <TodoList data={StaticData.itemList[0]} index={0}  key={0} removeFromArray={removeFromArray}/>;
+const MultiTemplate = () => 
+<div>
+<TodoList data={StaticData.itemList[0]} index={0}  key={0} removeFromArray={removeFromArray}/>
+<TodoList data={StaticData.itemList[1]} index={1}  key={1} removeFromArray={removeFromArray}/>
+</div>;
 
-export const TodoListItem = Template.bind({});
+export const DefaultView = Template.bind({});
+export const OneORMoreList = MultiTemplate.bind({});
 
