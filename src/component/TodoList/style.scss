@@ -1,0 +1,31 @@
+
+  .list-main {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    // border: 1px solid #ebebeb;
+    border-radius: 4px;
+
+    p {
+      margin-bottom: 0px;
+      position: relative;
+
+      &:hover{
+          span{
+              opacity: 1;
+          }
+      }
+      span{
+          position: absolute;
+          right: 10px;
+          top: 0px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          height: 100%;
+          font-size: 12px;
+          opacity: 0;
+          transition: 0.4s;
+      }
+    }
+  }

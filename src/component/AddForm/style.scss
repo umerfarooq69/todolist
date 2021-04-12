@@ -1,0 +1,23 @@
+.form-block{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+    .btn{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: #000;
+        bottom: 0px;
+        padding: 0px 50px;
+        color: #fff !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-control{
+        border: 0px;
+        min-height: 55px;
+    }
+}

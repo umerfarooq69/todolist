@@ -1,0 +1,21 @@
+.main-section {
+  position: relative;
+  width: 40%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  & > div {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+}
+
+.main-list-wrap {
+    // height: 300px;
+    // overflow-y: scroll;
+}
